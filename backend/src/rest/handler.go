@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"../models"
-	"./dblayer"
+	"github.com/JosephNaa/Go-Music-App/backend/src/dblayer"
+	"github.com/JosephNaa/Go-Music-App/backend/src/models"
 
 	"github.com/gin-gonic/gin"
 )

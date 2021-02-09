@@ -1,7 +1,7 @@
 package dblayer
 
 import (
-	"github.com/PacktPublishing/Hands-On-Full-Stack-Development-with-Go/Chapter06/backend/src/models"
+	"github.com/JosephNaa/Go-Music-App/backend/src/models"
 )
 
 type DBLayer interface {

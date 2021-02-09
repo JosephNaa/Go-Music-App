@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"rest"
+	"github.com/JosephNaa/Go-Music-App/backend/src/rest"
 )
 
 func main() {
