@@ -1,7 +1,24 @@
-import React from 'react'
-import {NavLink} from 'react-router-dom'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 
 export default class Navigation extends React.Component {
+
+    buildLoggedInMenu() {
+        return (
+            <div className="navbar-brand order-1 text-white my-auto">
+                <div className="btn-group">
+                    <button type="button" className="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Welcome {this.props.user.name}
+                    </button>
+                    <div className="dropdown-menu">
+                        <a className="btn dropdown-item" role="button">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
     render() {
         return (
             <div>

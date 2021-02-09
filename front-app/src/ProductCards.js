@@ -21,7 +21,7 @@ class Card extends React.Component {
 }
 
 export default class CardContainer extends React.Component {
-    constructor(porps) {
+    constructor(props) {
         super(props)
         this.state = {
             cards: []

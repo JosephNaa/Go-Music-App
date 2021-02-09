@@ -1,7 +1,7 @@
 import React from 'react';
 import CardContainer from './ProductCards';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Nav from './Navigation';
+import Nav from './Navigations';
 import { SignInModalWindow, BuyModalWindow } from './modalwindows';
 import About from './About';
 import Orders from './orders';

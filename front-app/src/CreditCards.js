@@ -1,5 +1,5 @@
 import React from 'react'
-import {injectStripe, StripeProvider, Elements, CardElement} from 'reactstripe-elements'
+import {injectStripe, StripeProvider, Elements, CardElement} from 'react-stripe-elements'
 
 const INITIALSTATE = "INITIAL", SUCCESSSTATE = "COMPLETE", FAILEDSTATE = "FAILED"
 
