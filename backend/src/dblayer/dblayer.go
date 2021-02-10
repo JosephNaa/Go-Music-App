@@ -1,7 +1,9 @@
 package dblayer
 
 import (
-	"github.com/JosephNaa/Go-Music-App/backend/src/models"
+	"errors"
+
+	"goMusic/backend/src/models"
 )
 
 type DBLayer interface {
@@ -18,3 +20,5 @@ type DBLayer interface {
 	GetCreditCardID(int) (string, error)
 	SaveCreditCardForCustomer(int, string) error
 }
+
+var ErrINVALIDPASSWORD = errors.New("Invalid password")

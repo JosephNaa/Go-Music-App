@@ -2,11 +2,12 @@ package rest
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 	"strconv"
 
-	"github.com/JosephNaa/Go-Music-App/backend/src/dblayer"
-	"github.com/JosephNaa/Go-Music-App/backend/src/models"
+	"goMusic/backend/src/dblayer"
+	"goMusic/backend/src/models"
 
 	"github.com/gin-gonic/gin"
 )
@@ -28,6 +29,11 @@ type Handler struct {
 func NewHandler() (*Handler, error) {
 	//Handler 객체에 대한 포인터 생성
 	return new(Handler), nil
+}
+
+func (h *Handler) GetMainPage(c *gin.Context) {
+	log.Println("Main page....")
+	c.String(http.StatusOK, "Main page for secure API!!")
 }
 
 func (h *Handler) GetProducts(c *gin.Context) {

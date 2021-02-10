@@ -3,10 +3,10 @@ package main
 import (
 	"log"
 
-	"github.com/JosephNaa/Go-Music-App/backend/src/rest"
+	"goMusic/backend/src/rest"
 )
 
 func main() {
 	log.Println("Main log....")
-	rest.RunAPI(":9090")
+	rest.RunAPI(":8000")
 }
